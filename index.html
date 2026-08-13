@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Animal Centro Veterinário | Clínica e Pet Shop em Pires do Rio, GO</title>
+<meta name="description" content="Clínica veterinária e pet shop no Centro de Pires do Rio, GO. Consultas, cirurgias, exames, vacinas, banho e tosa com o Dr. José Ricardo G. Mansur, CRMV-GO 2583. Chame no WhatsApp.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Mundo Animal Centro Veterinário | Pires do Rio, GO">
+<meta property="og:description" content="Consultas, cirurgias, exames, vacinas, banho e tosa e pet shop completo no Centro de Pires do Rio. Fale agora no WhatsApp.">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "Mundo Animal Centro Veterinário",
+  "alternateName": "Mundo Animal e Cia LTDA",
+  "image": "assets/logo.png",
+  "telephone": "+55 64 3461-5381",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Manoel Gonçalves de Araújo, 51",
+    "addressLocality": "Pires do Rio",
+    "addressRegion": "GO",
+    "postalCode": "75200-000",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -17.3015922,
+    "longitude": -48.279888
+  },
+  "sameAs": [
+    "https://www.facebook.com/mundoanimalpdr/"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --navy-900:#0B2545;
+    --navy-800:#0F2E56;
+    --navy-700:#163A6B;
+    --blue-500:#2E6BC7;
+    --blue-100:#EAF1FB;
+    --gold-500:#E8A33D;
+    --gold-600:#CE8A28;
+    --ink:#101826;
+    --ink-soft:#4B5768;
+    --paper:#F6F8FB;
+    --white:#FFFFFF;
+    --line:#DDE5F0;
+    --radius:16px;
+    --wa-green:#25D366;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Sora',system-ui,sans-serif;
+    color:var(--navy-900);
+    line-height:1.15;
+    margin:0 0 .5em;
+  }
+  p{margin:0 0 1em;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;list-style:none;}
+  .container{
+    width:100%;
+    max-width:1140px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  section{padding:72px 0;}
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--gold-600);
+    margin-bottom:14px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;height:2px;
+    background:var(--gold-500);
+    display:inline-block;
+  }
+  .section-head{max-width:640px;margin:0 0 40px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head p{color:var(--ink-soft);font-size:1.05rem;}
+
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* Botões */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:14px 26px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:.98rem;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn svg{width:20px;height:20px;flex:none;}
+  .btn-wa{
+    background:var(--wa-green);
+    color:#fff;
+    box-shadow:0 10px 24px -10px rgba(37,211,102,.65);
+  }
+  .btn-wa:hover{box-shadow:0 14px 28px -10px rgba(37,211,102,.75);}
+  .btn-outline{
+    background:transparent;
+    border-color:rgba(255,255,255,.55);
+    color:#fff;
+  }
+  .btn-outline:hover{background:rgba(255,255,255,.12);}
+  .btn-gold{
+    background:var(--gold-500);
+    color:var(--navy-900);
+    box-shadow:0 10px 24px -10px rgba(232,163,61,.6);
+  }
+  .btn-navy{
+    background:var(--navy-900);
+    color:#fff;
+  }
+  .btn-sm{padding:10px 18px;font-size:.88rem;}
+
+  /* ===== HEADER ===== */
+  header{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:100;
+    background:rgba(11,37,69,.92);
+    backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .nav-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:72px;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#fff;
+  }
+  .brand img{height:40px;width:auto;border-radius:8px;background:#fff;padding:3px;}
+  .brand-text{
+    font-family:'Sora',sans-serif;
+    font-weight:800;
+    font-size:1.05rem;
+    letter-spacing:-.01em;
+    color:#fff;
+  }
+  .brand-text span{color:var(--gold-500);}
+  nav.main-nav{display:none;}
+  nav.main-nav ul{display:flex;gap:26px;}
+  nav.main-nav a{
+    color:rgba(255,255,255,.85);
+    font-size:.92rem;
+    font-weight:600;
+    transition:color .15s ease;
+  }
+  nav.main-nav a:hover{color:var(--gold-500);}
+  .header-cta{display:none;}
+  .menu-btn{
+    background:none;border:none;color:#fff;
+    width:42px;height:42px;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  .menu-btn svg{width:24px;height:24px;}
+  .mobile-menu{
+    position:fixed;
+    inset:72px 0 0 0;
+    background:var(--navy-900);
+    transform:translateX(100%);
+    transition:transform .25s ease;
+    z-index:99;
+    overflow:auto;
+  }
+  .mobile-menu.open{transform:translateX(0);}
+  .mobile-menu ul{display:flex;flex-direction:column;padding:24px 20px;gap:4px;}
+  .mobile-menu a{
+    display:block;
+    padding:14px 6px;
+    color:#fff;
+    font-weight:600;
+    font-size:1.05rem;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .mobile-menu .btn{width:100%;margin-top:18px;}
+
+  @media(min-width:900px){
+    nav.main-nav{display:block;}
+    .header-cta{display:inline-flex;}
+    .menu-btn{display:none;}
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    padding:150px 0 90px;
+    background:radial-gradient(1100px 560px at 82% -10%, rgba(46,107,199,.55), transparent 60%), linear-gradient(160deg, var(--navy-900), var(--navy-700) 68%);
+    color:#fff;
+    overflow:hidden;
+  }
+  .hero-globe{
+    position:absolute;
+    right:-160px;top:-120px;
+    width:560px;height:560px;
+    opacity:.5;
+    pointer-events:none;
+  }
+  .hero-grid{
+    display:grid;
+    gap:44px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+  }
+  .hero h1{
+    color:#fff;
+    font-size:2.35rem;
+    max-width:15ch;
+  }
+  .hero .lede{
+    color:rgba(255,255,255,.82);
+    font-size:1.08rem;
+    max-width:46ch;
+  }
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:28px;
+  }
+  .pulse-line{
+    width:220px;
+    max-width:60vw;
+    height:34px;
+    margin:22px 0 6px;
+    display:block;
+  }
+  .pulse-line path{
+    fill:none;
+    stroke:var(--gold-500);
+    stroke-width:2.4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray:400;
+    stroke-dashoffset:400;
+    animation:draw 1.8s ease forwards .3s;
+  }
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  .hero-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:var(--radius);
+    padding:22px;
+    backdrop-filter:blur(6px);
+  }
+  .hero-card .brandbox{
+    background:#fff;
+    border-radius:12px;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero-card .brandbox img{width:100%;max-width:320px;}
+  .hero-card p{
+    color:rgba(255,255,255,.78);
+    font-size:.92rem;
+    margin:16px 0 0;
+    text-align:center;
+  }
+
+  @media(min-width:860px){
+    .hero{padding:170px 0 120px;}
+    .hero-grid{grid-template-columns:1.15fr .85fr;}
+    .hero h1{font-size:3.1rem;}
+  }
+
+  /* ===== CREDIBILITY BAR ===== */
+  .credibility{
+    background:var(--navy-800);
+    padding:0;
+  }
+  .cred-grid{
+    display:grid;
+    gap:0;
+    border-top:1px solid rgba(255,255,255,.08);
+  }
+  .cred-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:26px 20px;
+    color:#fff;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .cred-item svg{width:30px;height:30px;flex:none;color:var(--gold-500);}
+  .cred-item strong{display:block;font-family:'Sora',sans-serif;font-size:1rem;}
+  .cred-item span{display:block;color:rgba(255,255,255,.68);font-size:.86rem;}
+  @media(min-width:760px){
+    .cred-grid{grid-template-columns:repeat(3,1fr);}
+    .cred-item{border-bottom:none;border-right:1px solid rgba(255,255,255,.08);}
+    .cred-item:last-child{border-right:none;}
+  }
+
+  /* ===== SERVICES ===== */
+  .services-grid{
+    display:grid;
+    gap:20px;
+    grid-template-columns:1fr;
+  }
+  @media(min-width:640px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:980px){.services-grid{grid-template-columns:repeat(3,1fr);}}
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px;
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 22px 40px -24px rgba(11,37,69,.35);
+    border-color:transparent;
+  }
+  .card .ic{
+    width:52px;height:52px;
+    border-radius:14px;
+    background:var(--blue-100);
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:16px;
+  }
+  .card .ic svg{width:26px;height:26px;color:var(--blue-500);}
+  .card h3{font-size:1.08rem;margin-bottom:8px;}
+  .card p{color:var(--ink-soft);font-size:.95rem;margin:0;}
+
+  /* ===== WHY ===== */
+  .why{
+    background:var(--navy-900);
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+  }
+  .why::before{
+    content:"";
+    position:absolute;
+    left:-120px;bottom:-160px;
+    width:420px;height:420px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.08);
+  }
+  .why::after{
+    content:"";
+    position:absolute;
+    left:-40px;bottom:-260px;
+    width:560px;height:560px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.06);
+  }
+  .why .section-head p{color:rgba(255,255,255,.72);}
+  .why .eyebrow{color:var(--gold-500);}
+  .why-grid{
+    display:grid;
+    gap:18px;
+    grid-template-columns:1fr;
+    position:relative;
+    z-index:2;
+  }
+  @media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+  .why-item{
+    display:flex;
+    gap:16px;
+    padding:22px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:var(--radius);
+  }
+  .why-item .num{
+    font-family:'Sora',sans-serif;
+    font-weight:800;
+    font-size:1.6rem;
+    color:var(--gold-500);
+    flex:none;
+    width:40px;
+  }
+  .why-item h3{color:#fff;font-size:1.02rem;margin-bottom:6px;}
+  .why-item p{color:rgba(255,255,255,.72);font-size:.92rem;margin:0;}
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonial-wrap{
+    display:flex;
+    justify-content:center;
+  }
+  .testimonial{
+    max-width:640px;
+    background:var(--blue-100);
+    border-radius:var(--radius);
+    padding:40px;
+    text-align:center;
+    position:relative;
+  }
+  .testimonial .quote-mark{
+    font-family:'Sora',sans-serif;
+    font-size:3.4rem;
+    color:var(--gold-500);
+    line-height:1;
+    display:block;
+    margin-bottom:6px;
+  }
+  .testimonial p.quote{
+    font-family:'Sora',sans-serif;
+    font-size:1.3rem;
+    color:var(--navy-900);
+    font-weight:600;
+    margin-bottom:18px;
+  }
+  .testimonial .author{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+  }
+  .avatar{
+    width:38px;height:38px;
+    border-radius:50%;
+    background:var(--navy-900);
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Sora',sans-serif;font-weight:700;font-size:.9rem;
+  }
+  .author strong{display:block;font-size:.95rem;color:var(--navy-900);}
+  .author span{display:block;font-size:.8rem;color:var(--ink-soft);}
+  .testimonial-note{
+    text-align:center;
+    max-width:520px;
+    margin:20px auto 0;
+    color:var(--ink-soft);
+    font-size:.88rem;
+  }
+
+  /* ===== GALLERY ===== */
+  .gallery-grid{
+    display:grid;
+    gap:16px;
+    grid-template-columns:repeat(2,1fr);
+  }
+  @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(4,1fr);}}
+  .ph{
+    aspect-ratio:4/5;
+    border-radius:14px;
+    background:
+      repeating-linear-gradient(135deg, #E2E9F5 0 10px, #EAF1FB 10px 20px);
+    border:1px dashed #B9C8E0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:14px;
+    color:var(--ink-soft);
+    font-size:.82rem;
+    font-weight:600;
+  }
+  .gallery-grid .ph:nth-child(1),.gallery-grid .ph:nth-child(4){aspect-ratio:4/5;}
+  @media(min-width:760px){
+    .gallery-grid .ph:first-child{grid-row:span 2;aspect-ratio:auto;}
+  }
+
+  /* ===== FAQ ===== */
+  .faq-list{max-width:760px;margin:0 auto;}
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-q{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    padding:20px 4px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    cursor:pointer;
+    font-family:'Sora',sans-serif;
+    font-weight:600;
+    font-size:1rem;
+    color:var(--navy-900);
+  }
+  .faq-q svg{
+    width:20px;height:20px;flex:none;
+    transition:transform .2s ease;
+    color:var(--blue-500);
+  }
+  .faq-item.open .faq-q svg{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .faq-a p{
+    padding:0 4px 20px;
+    color:var(--ink-soft);
+    font-size:.95rem;
+    margin:0;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-wrap{
+    display:grid;
+    gap:28px;
+    grid-template-columns:1fr;
+  }
+  @media(min-width:900px){.contact-wrap{grid-template-columns:1fr 1.15fr;}}
+  .info-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:30px;
+  }
+  .info-row{
+    display:flex;
+    gap:14px;
+    padding:14px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .info-row:last-child{border-bottom:none;}
+  .info-row svg{width:22px;height:22px;flex:none;color:var(--blue-500);margin-top:2px;}
+  .info-row strong{display:block;font-size:.94rem;color:var(--navy-900);}
+  .info-row span, .info-row a{display:block;font-size:.9rem;color:var(--ink-soft);}
+  .info-row a:hover{color:var(--blue-500);}
+  .hours-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:4px;}
+  .hours-table td{padding:2px 0;color:var(--ink-soft);}
+  .hours-table td:first-child{padding-right:14px;color:var(--navy-900);font-weight:600;}
+  .map-wrap{
+    border-radius:var(--radius);
+    overflow:hidden;
+    border:1px solid var(--line);
+    min-height:340px;
+  }
+  .map-wrap iframe{width:100%;height:100%;min-height:340px;border:0;display:block;}
+
+  /* ===== FINAL CTA ===== */
+  .final-cta{
+    background:linear-gradient(120deg, var(--navy-900), var(--blue-500));
+    color:#fff;
+    text-align:center;
+    border-radius:28px;
+    padding:56px 26px;
+    margin:0 20px;
+    max-width:1100px;
+    margin-inline:auto;
+  }
+  .final-cta h2{color:#fff;font-size:1.9rem;max-width:20ch;margin:0 auto 12px;}
+  .final-cta p{color:rgba(255,255,255,.82);max-width:46ch;margin:0 auto 26px;}
+  .final-cta .hero-actions{justify-content:center;}
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:var(--navy-900);
+    color:rgba(255,255,255,.7);
+    padding:56px 0 26px;
+    margin-top:80px;
+  }
+  .footer-grid{
+    display:grid;
+    gap:32px;
+    grid-template-columns:1fr;
+    padding-bottom:32px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+  }
+  @media(min-width:760px){.footer-grid{grid-template-columns:1.3fr 1fr 1fr;}}
+  .footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .footer-brand img{height:34px;background:#fff;border-radius:6px;padding:2px;}
+  .footer-brand span{font-family:'Sora',sans-serif;font-weight:800;color:#fff;}
+  footer h4{color:#fff;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px;}
+  footer ul li{margin-bottom:9px;font-size:.9rem;}
+  footer a:hover{color:var(--gold-500);}
+  .socials{display:flex;gap:10px;margin-top:14px;}
+  .socials a{
+    width:38px;height:38px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .socials svg{width:18px;height:18px;}
+  .footer-bottom{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    padding-top:22px;
+    font-size:.8rem;
+  }
+  @media(min-width:640px){.footer-bottom{flex-direction:row;justify-content:space-between;}}
+
+  /* Sticky whatsapp mobile */
+  .sticky-wa{
+    position:fixed;
+    right:18px;bottom:18px;
+    z-index:90;
+    width:58px;height:58px;
+    border-radius:50%;
+    background:var(--wa-green);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 28px -8px rgba(37,211,102,.6);
+  }
+  .sticky-wa svg{width:28px;height:28px;color:#fff;}
+
+  @media(prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal, .pulse-line path{transition:none;animation:none;opacity:1;transform:none;stroke-dashoffset:0;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav-wrap">
+    <a href="#inicio" class="brand">
+      <img src="assets/logo.png" alt="Logo Mundo Animal Centro Veterinário">
+      <span class="brand-text">mundo<span>animal</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-wa btn-sm header-cta" href="https://wa.me/5564981230441?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Mundo%20Animal%20e%20quero%20falar%20sobre%20meu%20pet" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.12-1.8-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.6-.36.8-.36h.57c.19 0 .43-.02.66.5.24.55.82 1.9.89 2.04.07.14.12.3.02.49-.1.19-.15.3-.29.46-.14.16-.3.36-.43.48-.14.14-.29.28-.13.55.17.28.75 1.24 1.62 2.01 1.12.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.83.91-1.11.19-.28.38-.24.63-.14.26.1 1.6.76 1.87.9.27.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+      WhatsApp
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="container">
+      <a class="btn btn-wa" href="https://wa.me/5564981230441?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Mundo%20Animal%20e%20quero%20falar%20sobre%20meu%20pet" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <svg class="hero-globe" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="200" cy="200" r="180" stroke="#ffffff" stroke-opacity=".14"/>
+    <circle cx="200" cy="200" r="130" stroke="#ffffff" stroke-opacity=".14"/>
+    <circle cx="200" cy="200" r="80" stroke="#ffffff" stroke-opacity=".14"/>
+    <ellipse cx="200" cy="200" rx="180" ry="60" stroke="#ffffff" stroke-opacity=".14"/>
+    <ellipse cx="200" cy="200" rx="60" ry="180" stroke="#ffffff" stroke-opacity=".14"/>
+  </svg>
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Clínica veterinária e pet shop, Centro de Pires do Rio</p>
+      <h1>Cuidado veterinário completo para o seu pet, sem sair do Centro</h1>
+      <svg class="pulse-line" viewBox="0 0 220 34" aria-hidden="true">
+        <path d="M0 20 H55 L68 6 L82 32 L95 14 L106 20 H220"/>
+      </svg>
+      <p class="lede">Consultas, cirurgias, exames, vacinas, banho e tosa e uma loja completa de rações e medicamentos, tudo no mesmo endereço, com o Dr. José Ricardo G. Mansur (CRMV-GO 2583) à frente dos atendimentos.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/5564981230441?text=Ol%C3%A1%2C%20quero%20marcar%20um%20atendimento%20para%20o%20meu%20pet" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.12-1.8-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.6-.36.8-.36h.57c.19 0 .43-.02.66.5.24.55.82 1.9.89 2.04.07.14.12.3.02.49-.1.19-.15.3-.29.46-.14.16-.3.36-.43.48-.14.14-.29.28-.13.55.17.28.75 1.24 1.62 2.01 1.12.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.83.91-1.11.19-.28.38-.24.63-.14.26.1 1.6.76 1.87.9.27.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+          Marcar pelo WhatsApp
+        </a>
+        <a class="btn btn-outline" href="tel:+556434615381">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+          Ligar (64) 3461-5381
+        </a>
+      </div>
+    </div>
+    <div class="hero-card reveal">
+      <div class="brandbox">
+        <img src="assets/logo.png" alt="Mundo Animal Centro Veterinário">
+      </div>
+      <p>Rua Manoel Gonçalves de Araújo, 51, Centro, Pires do Rio, GO</p>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY BAR -->
+<div class="credibility">
+  <div class="container cred-grid">
+    <div class="cred-item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 4 9 9 10 5-1 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div><strong>CRMV-GO 2583</strong><span>Dr. José Ricardo G. Mansur, veterinário responsável</span></div>
+    </div>
+    <div class="cred-item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5V21H3V9.5Z"/><path d="M9 21v-7h6v7"/></svg>
+      <div><strong>Clínica + pet shop</strong><span>Atendimento e loja completos no mesmo endereço</span></div>
+    </div>
+    <div class="cred-item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><strong>Centro de Pires do Rio</strong><span>Rua Manoel Gonçalves de Araújo, nº 51</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">O que fazemos</p>
+      <h2>Serviços para cada fase do seu pet</h2>
+      <p>Do check-up de rotina à cirurgia, passando pela ração de todo mês, sem precisar rodar a cidade.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M8 4v4M16 4v4"/><path d="M6 10h12l-1 6a5 5 0 0 1-10 0l-1-6Z"/></svg></div>
+        <h3>Consultas e clínica médica</h3>
+        <p>Avaliação completa do seu cão ou gato, com diagnóstico e acompanhamento do Dr. José Ricardo.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 20 4M15 4h5v5"/><path d="M4 4h5v5M20 15v5h-5"/></svg></div>
+        <h3>Cirurgias e internação</h3>
+        <p>Procedimentos cirúrgicos realizados na clínica, com estrutura para acompanhar a recuperação do pet.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 12h3m12 0h3M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
+        <h3>Exames e ultrassonografia</h3>
+        <p>Exames laboratoriais e de imagem para agilizar o diagnóstico e o início do tratamento.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 6.5-8 11-8 11Z"/></svg></div>
+        <h3>Vacinas e prevenção</h3>
+        <p>Protocolo de vacinação para manter o seu pet protegido em cada fase da vida.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c1 2-1 3-1 5a3 3 0 0 0 6 0c0-1-.5-2-1-3M17 3c1 2-1 3-1 5a3 3 0 0 0 6 0c0-1-.5-2-1-3"/><path d="M4 21c0-4 3-7 8-7s8 3 8 7"/></svg></div>
+        <h3>Banho e tosa</h3>
+        <p>Higiene e embelezamento para o dia a dia, deixando o pet limpo, cheiroso e confortável.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18l-1.5 12.5A2 2 0 0 1 17.5 20h-11a2 2 0 0 1-2-1.5L3 6Z"/><path d="M8 6V4a4 4 0 0 1 8 0v2"/></svg></div>
+        <h3>Pet shop: rações e medicamentos</h3>
+        <p>Rações, medicamentos veterinários e acessórios prontos para levar na mesma visita.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="diferenciais" class="why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Por que a Mundo Animal</p>
+      <h2>O que os clientes encontram por aqui</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <span class="num">01</span>
+        <div><h3>Tudo em um só endereço</h3><p>Clínica, cirurgia, exames e pet shop funcionando juntos, sem precisar percorrer a cidade atrás de cada serviço.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <span class="num">02</span>
+        <div><h3>Veterinário registrado e presente</h3><p>Dr. José Ricardo G. Mansur, CRMV-GO 2583, à frente dos atendimentos clínicos e cirúrgicos.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <span class="num">03</span>
+        <div><h3>Atendimento a domicílio</h3><p>Para quando o pet não pode ou não deve se deslocar até a clínica.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <span class="num">04</span>
+        <div><h3>Referência entre os moradores</h3><p>Citada por clientes como uma das melhores opções de Pires do Rio e região.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="depoimentos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Depoimentos</p>
+      <h2>Quem já levou o pet até aqui</h2>
+    </div>
+    <div class="testimonial-wrap reveal">
+      <div class="testimonial">
+        <span class="quote-mark">&ldquo;</span>
+        <p class="quote">Os melhores de Pires do Rio e região!</p>
+        <div class="author">
+          <div class="avatar">GA</div>
+          <div><strong>Gustavo Antunes</strong><span>Avaliação no Google</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="testimonial-note">Depoimento real, retirado do perfil da empresa no Google. Novas avaliações podem ser adicionadas aqui conforme chegam.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="galeria">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Galeria</p>
+      <h2>Conheça o espaço</h2>
+      <p>Fotos reais da clínica e da loja entram aqui. Os quadros abaixo mostram o tamanho e o formato de cada uma.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="ph reveal">Foto: fachada da clínica</div>
+      <div class="ph reveal">Foto: consultório</div>
+      <div class="ph reveal">Foto: prateleiras do pet shop</div>
+      <div class="ph reveal">Foto: banho e tosa</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="duvidas">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2>Perguntas que todo tutor faz</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Vocês atendem cães e gatos ou outros animais também?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>O atendimento é voltado principalmente para cães e gatos, do consultório ao banho e tosa. Se o seu pet for de outra espécie, confirme antes pelo WhatsApp.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Vocês fazem atendimento a domicílio?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Sim. Para pets que não podem se deslocar até a clínica, é possível combinar o atendimento a domicílio pelo telefone ou WhatsApp.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Preciso agendar ou posso chegar direto na clínica?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Para consultas, exames e cirurgias, o ideal é combinar um horário antes pelo WhatsApp ou telefone. Para comprar ração e produtos, é só passar na loja.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quais formas de pagamento vocês aceitam?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Cartão de crédito, cartão de débito e pagamento por aproximação.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Dá para comprar ração e medicamentos sem passar por consulta?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Sim, o pet shop funciona de forma independente da clínica, com rações, medicamentos veterinários e acessórios.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Qual o horário de funcionamento?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><p>Os horários estão em confirmação nesta versão do site. Chame no WhatsApp para saber os horários atualizados do dia.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contato">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Contato</p>
+      <h2>Fale com a Mundo Animal</h2>
+      <p>Chame no WhatsApp, ligue ou venha até o Centro de Pires do Rio.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="info-card reveal">
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><strong>Endereço</strong><span>Rua Manoel Gonçalves de Araújo, nº 51, Centro, Pires do Rio, GO, CEP 75200-000</span></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+          <div><strong>Telefone</strong><a href="tel:+556434615381">(64) 3461-5381</a></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.12-1.8-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.6-.36.8-.36h.57c.19 0 .43-.02.66.5.24.55.82 1.9.89 2.04.07.14.12.3.02.49-.1.19-.15.3-.29.46-.14.16-.3.36-.43.48-.14.14-.29.28-.13.55.17.28.75 1.24 1.62 2.01 1.12.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.83.91-1.11.19-.28.38-.24.63-.14.26.1 1.6.76 1.87.9.27.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+          <div><strong>WhatsApp</strong><a href="https://wa.me/5564981230441?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20meu%20pet" target="_blank" rel="noopener">(64) 98123-0441</a></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <div><strong>E-mail</strong><span>a confirmar com a clínica</span></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div>
+            <strong>Horário</strong>
+            <span>Em confirmação com a clínica. Chame no WhatsApp para saber os horários do dia.</span>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Mundo+Animal+Centro+Veterin%C3%A1rio,+Rua+Manoel+Gon%C3%A7alves+de+Ara%C3%BAjo+51,+Pires+do+Rio,+GO&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa até a Mundo Animal Centro Veterinário, Pires do Rio">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section>
+  <div class="final-cta reveal">
+    <h2>Marque um horário para o seu pet</h2>
+    <p>Consulta, exame, banho e tosa ou uma dúvida rápida sobre ração. Chame agora e resolva no mesmo dia.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="https://wa.me/5564981230441?text=Ol%C3%A1%2C%20quero%20marcar%20um%20atendimento%20para%20o%20meu%20pet" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.12-1.8-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.6-.36.8-.36h.57c.19 0 .43-.02.66.5.24.55.82 1.9.89 2.04.07.14.12.3.02.49-.1.19-.15.3-.29.46-.14.16-.3.36-.43.48-.14.14-.29.28-.13.55.17.28.75 1.24 1.62 2.01 1.12.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.83.91-1.11.19-.28.38-.24.63-.14.26.1 1.6.76 1.87.9.27.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+        Marcar pelo WhatsApp
+      </a>
+      <a class="btn btn-outline" href="tel:+556434615381">Ligar (64) 3461-5381</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Mundo Animal">
+          <span>mundoanimal</span>
+        </div>
+        <p>Clínica veterinária e pet shop no Centro de Pires do Rio, GO. Consultas, cirurgias, exames, vacinas, banho e tosa e loja completa.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/mundoanimalpdr/" target="_blank" rel="noopener" aria-label="Facebook da Mundo Animal">
+            <svg viewBox="0 0 24 24" fill="#fff"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.7-1.6h1.5V4.2C15.9 4.1 14.9 4 13.8 4c-2.6 0-4.4 1.6-4.4 4.5v2.3H6.7V13h2.7v9h4.1Z"/></svg>
+          </a>
+          <a href="https://wa.me/5564981230441" target="_blank" rel="noopener" aria-label="WhatsApp da Mundo Animal">
+            <svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.12-1.8-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.6-.36.8-.36h.57c.19 0 .43-.02.66.5.24.55.82 1.9.89 2.04.07.14.12.3.02.49-.1.19-.15.3-.29.46-.14.16-.3.36-.43.48-.14.14-.29.28-.13.55.17.28.75 1.24 1.62 2.01 1.12.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.83.91-1.11.19-.28.38-.24.63-.14.26.1 1.6.76 1.87.9.27.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#duvidas">Dúvidas frequentes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>Rua Manoel Gonçalves de Araújo, 51, Centro, Pires do Rio, GO</li>
+          <li><a href="tel:+556434615381">(64) 3461-5381</a></li>
+          <li><a href="https://wa.me/5564981230441" target="_blank" rel="noopener">(64) 98123-0441 (WhatsApp)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Mundo Animal e Cia LTDA, CNPJ 22.517.830/0001-23. Todos os direitos reservados.</span>
+      <span>Dr. José Ricardo G. Mansur, CRMV-GO 2583.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-wa" href="https://wa.me/5564981230441?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20meu%20pet" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.1c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.12-1.8-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.6-.36.8-.36h.57c.19 0 .43-.02.66.5.24.55.82 1.9.89 2.04.07.14.12.3.02.49-.1.19-.15.3-.29.46-.14.16-.3.36-.43.48-.14.14-.29.28-.13.55.17.28.75 1.24 1.62 2.01 1.12.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.83.91-1.11.19-.28.38-.24.63-.14.26.1 1.6.76 1.87.9.27.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+</a>
+
+<script>
+  // Ano dinâmico
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Menu mobile
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Reveal on scroll
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.15});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>
